@@ -10,14 +10,13 @@ export default {
   ],
   output: [
     {
-      name: 'simple-tootip',
       file: './dist/index.js',
-      format: 'es'
+      format: 'es' // npm 项目使用 es 版本
     },
     {
-      name: 'simple-tootip',
+      name: 'ToolTip',
       file: './dist/index.min.js',
-      format: 'es',
+      format: 'umd', // 浏览器使用 umd 版本
       plugins: [terser()]
     }
   ]
