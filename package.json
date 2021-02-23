@@ -1,0 +1,25 @@
+{
+  "name": "simple-tooltip",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js"
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/*.d.ts"
+  ],
+  "typings": "./dist/index.d.ts",
+  "devDependencies": {
+    "@types/rollup": "^0.54.0",
+    "postcss": "^8.2.6",
+    "rollup": "^2.39.1",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-node": "^9.1.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.5"
+  }
+}
