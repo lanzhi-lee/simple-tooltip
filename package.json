@@ -1,10 +1,11 @@
 {
-  "name": "simple-tooltip",
-  "version": "0.0.1",
+  "name": "@lanzhi/simple-tooltip",
+  "version": "0.0.0",
   "main": "./dist/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c ./rollup.config.js"
+    "build": "rollup -c ./rollup.config.js",
+    "publish": "npm publish --access public"
   },
   "files": [
     "dist/**/*.js",
