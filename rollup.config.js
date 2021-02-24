@@ -14,7 +14,7 @@ export default {
       format: 'es' // npm 项目使用 es 版本
     },
     {
-      name: 'ToolTip',
+      name: 'tooltip',
       file: './dist/index.min.js',
       format: 'umd', // 浏览器使用 umd 版本
       plugins: [terser()]

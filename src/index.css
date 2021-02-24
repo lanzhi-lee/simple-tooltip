@@ -1,9 +1,9 @@
-[tooltip] {
+[data-tooltip] {
   position: relative;
 }
 
-[tooltip]::before,
-[tooltip]::after {
+[data-tooltip]::before,
+[data-tooltip]::after {
   position: absolute;
   top: -15px;
   left: 50%;
@@ -11,7 +11,7 @@
   opacity: 0;
 }
 
-[tooltip]::before {
+[data-tooltip]::before {
   content: "";
   border-width: 6px 6px 0 6px;
   border-style: solid;
@@ -22,8 +22,8 @@
   transform: translateX(-50%);
 }
 
-[tooltip]::after {
-  content: attr(tooltip);
+[data-tooltip]::after {
+  content: attr(data-tooltip);
   min-width: 114px;
   padding: 13px;
 
@@ -40,20 +40,20 @@
   transform: translateX(-50%) translateY(-100%);
 }
 
-[tooltip]:hover::after,
-[tooltip]:hover::before {
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before {
   opacity: 1;
   transition: 0.5s;
 }
 
 /* 右侧 */
-[tooltip][position="right"]::before {
+[data-tooltip][data-position="right"]::before {
   top: 50%;
   left: 100%;
   margin-left: 6px;
   transform: translateY(-50%) rotate(90deg);
 }
-[tooltip][position="right"]::after {
+[data-tooltip][data-position="right"]::after {
   top: 50%;
   left: 100%;
   margin-left: 15px;
@@ -61,13 +61,13 @@
 }
 
 /* 左侧 */
-[tooltip][position="left"]::before {
+[data-tooltip][data-position="left"]::before {
   top: 50%;
   left: 0;
   margin-left: -18px;
   transform: translateY(-50%) rotate(-90deg);
 }
-[tooltip][position="left"]::after {
+[data-tooltip][data-position="left"]::after {
   top: 50%;
   left: 0;
   margin-left: -15px;
@@ -75,13 +75,13 @@
 }
 
 /* 底侧 */
-[tooltip][position="bottom"]::before {
+[data-tooltip][data-position="bottom"]::before {
   top: 100%;
   left: 50%;
   margin-top: 9px;
   transform: translatex(-50%) rotate(180deg);
 }
-[tooltip][position="bottom"]::after {
+[data-tooltip][data-position="bottom"]::after {
   top: 100%;
   left: 50%;
   margin-top: 15px;
