@@ -4,8 +4,7 @@
   "main": "./dist/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c ./rollup.config.js",
-    "publish": "npm publish --access public"
+    "build": "rollup -c ./rollup.config.js"
   },
   "files": [
     "dist/**/*.js",
