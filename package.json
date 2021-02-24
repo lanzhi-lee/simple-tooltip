@@ -26,5 +26,7 @@
     "ts-node": "^9.1.1",
     "tslib": "^2.1.0",
     "typescript": "^4.1.5"
-  }
+  },
+  "jsdelivr": "./dist/index.min.js",
+  "unpkg": "./dist/index.min.js"
 }
